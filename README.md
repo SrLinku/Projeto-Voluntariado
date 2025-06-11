@@ -19,6 +19,8 @@ Uma instituição social (ONG) dedicada a diversas causas na comunidade tem enfr
 ## 📂 Estrutura de Arquivos
 
 Projeto-Voluntariado/<br>
+├── css/<br>
+│   └── style.css<br>
 ├── index.html<br>
 └── README.md<br>
 
@@ -38,6 +40,7 @@ Nenhuma instalação de dependências é necessária, pois o projeto é todo em 
 ## 💻 Tecnologias Utilizadas
 
 - HTML5
+- CSS3
 
 ## 🛠️ Ferramentas e Recursos
 
@@ -68,7 +71,7 @@ Este projeto foi desenvolvido como parte das atividades do curso de Análise e D
 
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [W3Schools](https://www.w3schools.com/)
-- Exemplos e tutoriais sobre HTML, disponíveis no YouTube e blogs educacionais.
+- Exemplos e tutoriais sobre HTML, CSS disponíveis no YouTube e blogs educacionais.
 
 ## 👥 Autor
 
