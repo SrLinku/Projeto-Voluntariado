@@ -1,0 +1,47 @@
+/* ===== TELA INICIAL ===== */
+
+/* Define o espaço principal da tela com altura flexível */
+main {
+  flex: 1;
+  padding: 3rem 0;
+}
+
+/* Estilo da seção de destaque (hero) */
+.hero {
+  background: white;
+  padding: clamp(1rem, 5vw, 3rem) clamp(1rem, 5vw, 2rem);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Título principal da seção hero */
+.hero h2 {
+  font-size: clamp(1.1rem, 6vw, 2.5rem);
+}
+
+/* Parágrafo explicativo da hero */
+.hero p {
+  font-size: clamp(0.85rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+  padding: 0 0.5rem;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+/* Botão de chamada para ação (CTA) */
+.hero .btn {
+  font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+  padding: clamp(0.5rem, 3vw, 1rem) clamp(1rem, 5vw, 1.5rem);
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 480px) {
+  .hero .btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}
