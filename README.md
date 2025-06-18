@@ -20,7 +20,10 @@ Uma instituição social (ONG) dedicada a diversas causas na comunidade tem enfr
 
 Projeto-Voluntariado/<br>
 ├── css/<br>
+│   └── cadastro.css<br>
+│   └── inicio.css<br>
 │   └── style.css<br>
+├── cadastro.html<br>
 ├── index.html<br>
 └── README.md<br>
 
@@ -62,6 +65,11 @@ Nenhuma instalação de dependências é necessária, pois o projeto é todo em 
 - Uso de elementos HTML semânticos
 - Contraste de cores adequado
 - Estrutura clara para leitores de tela
+
+## 📦 Deploy
+
+O site está disponível em:
+👉 https://srlinku.github.io/Projeto-Voluntariado/
 
 ## 🏫 Instituição de Ensino
 
