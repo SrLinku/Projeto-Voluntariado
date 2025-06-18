@@ -1,0 +1,83 @@
+/* ===== TELA DE CADASTRO ===== */
+
+/* Área principal da página */
+main {
+  flex: 1;
+  padding: clamp(1rem, 4vw, 3rem) 0;
+}
+
+/* Seção que envolve todo o formulário */
+.form-section {
+  background: white;
+  padding: clamp(1rem, 5vw, 3rem);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Título do formulário */
+.form-section h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  padding: 0 1rem;
+  line-height: 1.4;
+}
+
+/* Container do formulário com os campos organizados verticalmente */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+/* Estilo dos rótulos (labels) e campos de entrada */
+.form-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #1e3a8a;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+}
+
+/* Estilização comum para todos os campos de entrada */
+.form-container input,
+.form-container textarea,
+.form-container select {
+  padding: clamp(0.5rem, 2vw, 0.8rem);
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  margin-top: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Estilo específico para o campo de texto longo (textarea) */
+.form-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Estilização do botão de envio */
+.form-container button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: clamp(0.8rem, 3vw, 1rem);
+  border-radius: 8px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* Efeito visual ao passar o mouse sobre o botão */
+.form-container button:hover {
+  background-color: #2563eb;
+}
