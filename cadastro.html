@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Configuração básica da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Necessidade</title>
+
+    <!-- Importação do CSS geral (estrutura, header, footer, botões, etc.) -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonte Inter do Google Fonts (moderna e legível) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho com título e menu de navegação -->
+    <header>
+      <div class="container header-content">
+        <!-- Título principal do sistema -->
+        <h1>🌱 Conexão Voluntária</h1>
+
+        <!-- Menu de navegação do topo -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cadastro.html" class="active">Cadastrar Necessidade</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container">
+      <section>
+        <h2>Preencha o formulário abaixo</h2>
+
+        <!-- Formulário de cadastro de necessidade -->
+        <form id="formCadastro">
+          <!-- Campo: Nome da Instituição -->
+          <label>
+            Nome da Instituição:
+            <input type="text" id="instituicao" required />
+          </label>
+
+          <!-- Campo: Tipo de Ajuda com opções -->
+          <label>
+            Tipo de Ajuda:
+            <select id="tipoAjuda" required>
+              <option value="">Selecione</option>
+              <option value="Educação">Educação</option>
+              <option value="Saúde">Saúde</option>
+              <option value="Meio Ambiente">Meio Ambiente</option>
+              <option value="Doação de Alimentos">Doação de Alimentos</option>
+              <option value="Doação de Roupas">Doação de Roupas</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </label>
+
+          <!-- Campo: Título da Necessidade -->
+          <label>
+            Título da Necessidade:
+            <input type="text" id="titulo" required />
+          </label>
+
+          <!-- Campo: Descrição detalhada -->
+          <label>
+            Descrição:
+            <textarea id="descricao" required></textarea>
+          </label>
+
+          <!-- Campo: CEP que será usado para preenchimento automático via API -->
+          <label>
+            CEP:
+            <input type="text" id="cep" required />
+          </label>
+
+          <!-- Campos de endereço preenchidos automaticamente pelo CEP -->
+          <label>Rua:<input type="text" id="rua" readonly /></label>
+          <label>Bairro:<input type="text" id="bairro" readonly /></label>
+          <label>Cidade:<input type="text" id="cidade" readonly /></label>
+          <label>Estado:<input type="text" id="estado" readonly /></label>
+
+          <!-- Campo: Contato da instituição -->
+          <label>
+            Contato:
+            <input type="text" id="contato" required />
+          </label>
+
+          <!-- Botão de envio do formulário -->
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Conexão Voluntária — Desenvolvido com propósito 💛</p>
+      </div>
+    </footer>
+  </body>
+</html>
