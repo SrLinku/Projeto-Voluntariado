@@ -23,6 +23,8 @@ Projeto-Voluntariado/<br>
 │   └── cadastro.css<br>
 │   └── inicio.css<br>
 │   └── style.css<br>
+├── js/<br>
+│   └── cadastro.js<br>
 ├── cadastro.html<br>
 ├── index.html<br>
 └── README.md<br>
@@ -44,6 +46,8 @@ Nenhuma instalação de dependências é necessária, pois o projeto é todo em 
 
 - HTML5
 - CSS3
+- JavaScript (vanilla)
+- API ViaCep
 
 ## 🛠️ Ferramentas e Recursos
 
@@ -79,7 +83,7 @@ Este projeto foi desenvolvido como parte das atividades do curso de Análise e D
 
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [W3Schools](https://www.w3schools.com/)
-- Exemplos e tutoriais sobre HTML, CSS disponíveis no YouTube e blogs educacionais.
+- Exemplos e tutoriais sobre HTML, CSS e JavaScript disponíveis no YouTube e blogs educacionais.
 
 ## 👥 Autor
 
