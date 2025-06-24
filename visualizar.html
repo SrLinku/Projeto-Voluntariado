@@ -4,13 +4,10 @@
     <!-- Configuração básica da página -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plataforma de Conexão Voluntária</title>
+    <title>Necessidades Cadastradas</title>
 
     <!-- Importação do CSS geral (estrutura, header, footer, botões, etc.) -->
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Importa o estilo específico da página inicial -->
-    <link rel="stylesheet" href="css/inicio.css" />
 
     <!-- Fonte Inter do Google Fonts (moderna e legível) -->
     <link
@@ -28,32 +25,32 @@
         <!-- Menu de navegação do topo -->
         <nav>
           <ul>
-            <li><a href="index.html" class="active">Início</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="cadastro.html">Cadastrar Necessidade</a></li>
-            <li><a href="visualizar.html">Visualizar Oportunidades</a></li>
+            <li><a href="visualizar.html" class="active">Visualizar Oportunidades</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Conteúdo principal da página -->
-    <main class="container">
-      <section class="hero">
-        <!-- Título da seção de destaque -->
-        <h2>Juntos fazemos a diferença!</h2>
+    <!-- Conteúdo principal da tela -->
+    <main>
+      <!-- Campo de busca por palavra-chave (pesquisa dinâmica por título ou descrição) -->
+      <input type="text" id="pesquisa" placeholder="Pesquisar..." />
 
-        <!-- Texto explicativo da plataforma -->
-        <p>
-          A <strong>Plataforma de Conexão Voluntária</strong> é uma iniciativa
-          para unir ONGs e voluntários em prol de um bem comum. Aqui,
-          instituições sociais podem cadastrar suas necessidades, e pessoas
-          dispostas a ajudar encontram oportunidades reais para fazer parte de
-          algo transformador.
-        </p>
+      <!-- Filtro por tipo de ajuda: permite refinar os resultados -->
+      <select id="filtroTipo">
+        <option value="">Todos os Tipos</option>
+        <option value="Educação">Educação</option>
+        <option value="Saúde">Saúde</option>
+        <option value="Meio Ambiente">Meio Ambiente</option>
+        <option value="Doação de Alimentos">Doação de Alimentos</option>
+        <option value="Doação de Roupas">Doação de Roupas</option>
+        <option value="Outros">Outros</option>
+      </select>
 
-        <!-- Botão com chamada para ação (CTA) redirecionando à visualização -->
-        <a class="btn">Descubra como ajudar</a>
-      </section>
+      <!-- Seção onde os cards das necessidades filtradas serão renderizados dinamicamente -->
+      <section id="listaNecessidades"></section>
     </main>
 
     <!-- Rodapé da página -->
